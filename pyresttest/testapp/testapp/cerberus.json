@@ -1,0 +1,3 @@
+
+{"first_name": {"type" : "string"}, "last_name": {"type" : "string"}, "login": {"type" : "string"}, "resource_uri": {"type" : "string"}, "id": {"type" : "string"} }
+

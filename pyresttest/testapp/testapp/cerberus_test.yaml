@@ -1,0 +1,12 @@
+---
+- config:
+    - testset: "Quickstart app tests"
+
+- test:
+    - group: "Quickstart"
+    - name: "Basic smoketest"
+    - url: "/api/person/2/"
+    - validators:
+        - cerberus: {schema: {file: 'cerberus.json'}}
+
+
