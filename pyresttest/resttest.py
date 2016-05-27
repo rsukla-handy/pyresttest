@@ -786,6 +786,14 @@ except ImportError as ie:
     logging.debug(
         "Failed to load jmespath extractor, make sure the jmespath module is installed if you wish to use jmespath extractor.")
 
+try:
+    import cerberus
+    register_extensions('pyresttest.ext.validator_cerberus')
+except ImportError as ie:
+    logging.debug(
+        "Failed to load cerberus validator, make sure the cerberus module is installed if you wish to use cerberus validator.")
+
+
 def main(args):
     """
     Execute a test against the given base url.
