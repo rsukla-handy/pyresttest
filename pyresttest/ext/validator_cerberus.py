@@ -49,4 +49,4 @@ class JsonSchemaValidator(validators.AbstractValidator):
                                                                         'schema'])
         return validator
 
-VALIDATORS = {'ValidSchema': JsonSchemaValidator.parse}
+VALIDATORS = {'SchemaValidation': JsonSchemaValidator.parse}
